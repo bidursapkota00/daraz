@@ -4,6 +4,7 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Person4Icon from '@mui/icons-material/Person4';
 import Search from "./search";
 import Box from "./box";
 
@@ -17,7 +18,34 @@ export default function Navbar() {
                     <div className="group relative mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">
                         <Link href="#" className="">Help & Support</Link>
                         <div className="absolute top-[100%] left-0 h-[15px] w-[100%]"></div>
-                        <Box />
+                        <Box positionArrow="left-[50%]">
+                            <div className="flex flex-row p-[30px] flex-wrap w-[250px]">
+                                <Link href="#" className='flex flex-row cursor-pointer pb-[10px]'>
+                                    <Person4Icon sx={{ fontSize: 20, color: '#6e686e' }} />
+                                    <span className="text-[12px] text-[#6e686e] ml-[20px] w-[120px]">Help Center</span>
+                                </Link>
+                                <Link href="#" className='flex flex-row cursor-pointer py-[10px]'>
+                                    <Person4Icon sx={{ fontSize: 20, color: '#6e686e' }} />
+                                    <span className="text-[12px] text-[#6e686e] ml-[20px] w-[120px]">Chat with Us</span>
+                                </Link>
+                                <Link href="#" className='flex flex-row cursor-pointer py-[10px]'>
+                                    <Person4Icon sx={{ fontSize: 20, color: '#6e686e' }} />
+                                    <span className="text-[12px] text-[#6e686e] ml-[20px] w-[120px]">Order</span>
+                                </Link>
+                                <Link href="#" className='flex flex-row cursor-pointer py-[10px]'>
+                                    <Person4Icon sx={{ fontSize: 20, color: '#6e686e' }} />
+                                    <span className="text-[12px] text-[#6e686e] ml-[20px] w-[120px]">Shipping & Delivery</span>
+                                </Link>
+                                <Link href="#" className='flex flex-row cursor-pointer py-[10px]'>
+                                    <Person4Icon sx={{ fontSize: 20, color: '#6e686e' }} />
+                                    <span className="text-[12px] text-[#6e686e] ml-[20px] w-[120px]">Payment</span>
+                                </Link>
+                                <Link href="#" className='flex flex-row cursor-pointer pt-[10px]'>
+                                    <Person4Icon sx={{ fontSize: 20, color: '#6e686e' }} />
+                                    <span className="text-[12px] text-[#6e686e] ml-[20px] w-[120px]">Returns & Refund</span>
+                                </Link>
+                            </div>
+                        </Box>
                     </div>
                     <Link href="#" className="mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">Daraz Logistics Partner</Link>
                 </div>
