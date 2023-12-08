@@ -19,7 +19,7 @@ export default function Navbar() {
                     {/*  */}
                     <div className="group mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] hover:h-[30px] cursor-pointer">
                         <Link href="#" className="">Help & Support</Link>
-                        <Box position2={'left-[80%]'} />
+                        <Box position2={'left-[50%]'} />
                     </div>
                     <Link href="#" className="mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">Daraz Logistics Partner</Link>
                 </div>
