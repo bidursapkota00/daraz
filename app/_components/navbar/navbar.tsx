@@ -5,15 +5,22 @@ import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Search from "./search";
+import Box from "./box";
 
 export default function Navbar() {
     return (
         <div className='bg-[#f85606] h-[91px] px-[76px]'>
-            <div className="flex flex-row justify-between items-center">
-                <div className="flex flex-row py-[5px]">
+            {/*  */}
+            <div className="flex flex-row justify-between       h-[30px]">
+                {/*  */}
+                <div className="flex flex-row      pt-[5px] h-[20px]">
                     <Link href="#" className="mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">Become a Seller</Link>
                     <Link href="#" className="mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">Payments & Recharge</Link>
-                    <Link href="#" className="mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">Help & Support</Link>
+                    {/*  */}
+                    <div className="group mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] hover:h-[30px] cursor-pointer">
+                        <Link href="#" className="">Help & Support</Link>
+                        <Box position2={'left-[80%]'} />
+                    </div>
                     <Link href="#" className="mr-[20px] text-[12px] text-[#fff] hover:text-[#eee] cursor-pointer">Daraz Logistics Partner</Link>
                 </div>
                 <div className="flex flex-row items-center bg-[rgba(0,0,0,0.3)] p-[5px] rounded-[5px] cursor-pointer">
