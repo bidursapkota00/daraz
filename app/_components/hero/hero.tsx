@@ -35,7 +35,7 @@ export default function Hero() {
         { key: 'Beauty Tools', category: [{ image: '', category: 'Flat Irons' }, { image: '', category: 'Hair Dryer' }] },
     ]
     return (
-        <div className='flex flex-row py-[10px] px-[76px] bg-[#f5f5f5]'>
+        <div className='flex flex-row py-[10px] px-[76px]'>
             <div className="w-[20%] relative border border-[#bfbfbf] bg-white mr-[50px]">
                 {categories.map((c, i) => <div key={i} className="grid grid-cols-[30px_1fr] cursor-pointer group w-[100%]">
                     {c.icon}
