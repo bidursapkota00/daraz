@@ -37,11 +37,11 @@ export default function Timer() {
 
     return (
         <>
-            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm'><span>{String(time.hours).padStart(2, '0')}</span></div>
-            <span className='inline-block'>&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm'><span>{String(time.minutes).padStart(2, '0')}</span></div>
-            <span className='inline-block'>&nbsp;&nbsp;:&nbsp;&nbsp;</span>
-            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm'><span>{String(time.seconds).padStart(2, '0')}</span></div>
+            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm text-white'><span>{String(time.hours).padStart(2, '0')}</span></div>
+            <span className='inline-block text-[#f85606]'>&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm text-white'><span>{String(time.minutes).padStart(2, '0')}</span></div>
+            <span className='inline-block text-[#f85606]'>&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm text-white'><span>{String(time.seconds).padStart(2, '0')}</span></div>
         </>
     )
 }
