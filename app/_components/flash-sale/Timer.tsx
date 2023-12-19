@@ -37,9 +37,11 @@ export default function Timer() {
 
     return (
         <>
-            <span>{String(time.hours).padStart(2, '0')} : </span>
-            <span>{String(time.minutes).padStart(2, '0')} : </span>
-            <span>{String(time.seconds).padStart(2, '0')}</span>
+            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm'><span>{String(time.hours).padStart(2, '0')}</span></div>
+            <span className='inline-block'>&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm'><span>{String(time.minutes).padStart(2, '0')}</span></div>
+            <span className='inline-block'>&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+            <div className='w-8 h-8 flex flex-row items-center justify-center bg-[#ff6801] rounded-sm'><span>{String(time.seconds).padStart(2, '0')}</span></div>
         </>
     )
 }
