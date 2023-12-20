@@ -50,13 +50,13 @@ export default function Product() {
     return (
         <div className='flex flex-row flex-wrap mt-[2px] justify-between bg-white rounded-sm'>
             {products.map((p, i) => (
-                <div key={i} className='w-[188px] py-2'>
+                <div key={i} className='w-[188px] pb-2 my-3 hover:shadow-[2px_2px_2px_rgba(0,0,0,0.1),-2px_2px_2px_rgba(0,0,0,0.1)] cursor-pointer mr-2 last:mr-0'>
                     <Image src={`/${p.img}`} alt='Product' width={180} height={180} className='w-[100%]' />
-                    <p className='text-ellipsis line-clamp-2'>{p.name}</p>
-                    <p>Rs.{p.discount ? p.price - p.discount / 100 * p.price : p.price}</p>
+                    <p className='text-ellipsis line-clamp-2 text-[14px] my-1 leading-[18px]'>{p.name}</p>
+                    <p className='text-[18px] text-[#f85606] tracking-[-0.56px]'>Rs.{p.discount ? p.price - p.discount / 100 * p.price : p.price}</p>
                     <div className="flex flex-row">
-                        <p>Rs.{p.price}&nbsp;</p>
-                        <p>-{p.discount}%</p>
+                        <p className='line-through text-[12px] text-[#9e9e9e]'>Rs.{p.price}</p>
+                        <p className='ml-1 text-[12px] text-[#212121]'>-{p.discount}%</p>
                     </div>
                 </div>
             ))}
