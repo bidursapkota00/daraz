@@ -1,3 +1,4 @@
+import Product from "./Product";
 import Timer from "./Timer";
 
 export default function FlashSale() {
@@ -14,6 +15,7 @@ export default function FlashSale() {
                 </div>
                 <button className="py-2 border border-[#f85606] text-[14px] text-[#f85606] rounded-sm">SHOP MORE</button>
             </div>
+            <Product />
         </div>
     )
 }
