@@ -1,0 +1,21 @@
+.timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time_text {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ff6801;
+    border-radius: 2px;
+    color: white;
+}
+
+.colon {
+    color: #f85606;
+}

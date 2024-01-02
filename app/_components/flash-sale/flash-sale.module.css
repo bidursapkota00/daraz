@@ -1,0 +1,36 @@
+.container {
+    padding: 0 76px;
+}
+
+.heading {
+    color: #424242;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.on_sale {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 170px 1fr 120px;
+    background: white;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.on_sale_text {
+    color: #f85606;
+}
+
+.timer_container {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+}
+
+.button {
+    padding: 8px 0;
+    border: 1px solid #f85606;
+    font-size: 14px;
+    color: #f85606;
+    border-radius: 2px;
+}
