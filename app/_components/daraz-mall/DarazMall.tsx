@@ -51,7 +51,7 @@ export default function DarazMall() {
     return (
         <div className="px-[76px] my-10">
             <div className="flex flex-row items-center justify-between">
-                <h1 className="text-[#424242] text-[22px] mb-1">Flash Sale</h1>
+                <h1 className="text-[#424242] text-[22px] mb-1">DarazMall</h1>
                 <Link href="#" className='text-[#f85606] text-[14px]'>{"SHOP MORE >"}</Link>
             </div>
             <div className='flex flex-row flex-wrap mt-[2px] justify-between rounded-sm'>
