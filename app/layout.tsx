@@ -5,6 +5,7 @@ import Navbar from './_components/navbar/navbar'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './_components/footer/footer';
+import { GlobalStateProvider } from './_context/GlobalContext';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#f5f5f5]`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <GlobalStateProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </GlobalStateProvider>
       </body>
     </html>
   )
