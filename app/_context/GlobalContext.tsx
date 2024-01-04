@@ -16,26 +16,20 @@ const initialState: stateType = {
     darkMode: false,
 }
 
-// Possible Actions type
-const LOGIN = 'LOGIN'
-const LOGOUT = 'LOGOUT'
-const DARKMODEON = 'DARKMODEON'
-const DARKMODEOFF = 'DARKMODEOFF'
-
 // Handle Possible Actions
 // Reducer Functions
 const globalReducer = (state: stateType, action: Action) => {
     switch (action.type) {
-        case LOGIN:
+        case "LOGIN":
             return { ...state, isLoggedIn: true }
 
-        case LOGOUT:
+        case "LOGOUT":
             return { ...state, isLoggedIn: false }
 
-        case DARKMODEON:
+        case "DARKMODEON":
             return { ...state, darkMode: true }
 
-        case DARKMODEOFF:
+        case "DARKMODEOFF":
             return { ...state, darkMode: false }
 
         default:
