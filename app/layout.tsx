@@ -5,7 +5,7 @@ import Navbar from './_components/navbar/navbar'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from './_components/footer/footer';
-import { GlobalStateProvider } from './_context/GlobalContext';
+import { GlobalStateProvider } from './_context2/GlobalContext';
 
 const inter = Inter({ subsets: ['latin'] })
 
